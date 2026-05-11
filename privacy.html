@@ -1,17 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Privacy Policy</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | PhishGuard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a; /* Deep slate for readability */
+            color: #e2e8f0;
+        }
+        .content-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+    </style>
 </head>
-<body>
-  <h1>Privacy Policy</h1>
+<body class="min-h-screen py-12 px-6">
 
-  <p>PhishGuard respects your privacy.</p>
+    <div class="max-w-3xl mx-auto">
+        <header class="mb-10 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold text-white tracking-tight">Privacy Policy</h1>
+                <p class="text-blue-400 font-medium mt-1">PhishGuard Security Suite</p>
+            </div>
+            <a href="index.html" class="text-sm text-slate-400 hover:text-white transition-colors">← Back to Portal</a>
+        </header>
 
-  <p>This app may use Firebase, AdMob, and analytics services.</p>
+        <main class="content-card p-8 md:p-12 rounded-3xl shadow-2xl space-y-8">
+            
+            <section class="flex gap-4">
+                <div class="h-8 w-8 rounded-full bg-blue-500/20 flex items-center justify-center shrink-0">
+                    <span class="text-blue-400 text-sm">✓</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-white mb-2">Our Commitment</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        PhishGuard respects your privacy. We believe in transparency and providing a secure environment for all our users.
+                    </p>
+                </div>
+            </section>
 
-  <p>No sensitive personal data is intentionally sold or shared.</p>
+            <hr class="border-white/5">
 
-  <p>Contact: support.cpnexus@gmail.com</p>
+            <section class="flex gap-4">
+                <div class="h-8 w-8 rounded-full bg-emerald-500/20 flex items-center justify-center shrink-0">
+                    <span class="text-emerald-400 text-sm">⚙</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-white mb-2">Integrated Services</h2>
+                    <p class="text-slate-400 leading-relaxed mb-4">
+                        To provide a seamless experience and improve our services, this app integrates with:
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center text-sm">Firebase</div>
+                        <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center text-sm">AdMob</div>
+                        <div class="bg-white/5 p-3 rounded-xl border border-white/5 text-center text-sm">Analytics</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-white/5">
+
+            <section class="flex gap-4">
+                <div class="h-8 w-8 rounded-full bg-purple-500/20 flex items-center justify-center shrink-0">
+                    <span class="text-purple-400 text-sm">🛡</span>
+                </div>
+                <div>
+                    <h2 class="text-lg font-semibold text-white mb-2">Data Protection</h2>
+                    <p class="text-slate-400 leading-relaxed">
+                        Your trust is our priority. <span class="text-white font-medium">No sensitive personal data is intentionally sold or shared</span> with third-party advertisers or external organizations.
+                    </p>
+                </div>
+            </section>
+
+            <div class="mt-12 p-6 rounded-2xl bg-gradient-to-br from-blue-600/10 to-transparent border border-blue-500/20">
+                <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-2">Inquiries</h3>
+                <p class="text-slate-300">Have questions regarding your data?</p>
+                <a href="mailto:support.cpnexus@gmail.com" class="text-white hover:underline mt-2 inline-block font-medium">
+                    support.cpnexus@gmail.com
+                </a >
+            </div>
+        </main>
+
+        <footer class="mt-8 text-center text-slate-500 text-sm">
+            Last Updated: May 2026
+        </footer>
+    </div>
+
 </body>
 </html>
