@@ -3,43 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CP Nexus | Portal</title>
+    <title>CP Nexus | Create • Connect • Elevate</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at top left, #1a1a2e, #16213e, #0f3460);
-            min-height: 100vh;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: #050505;
+            color: white;
+            overflow-x: hidden;
         }
-        .glass {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+
+        .mesh-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 0% 0%, rgba(29, 78, 216, 0.15) 0%, transparent 35%),
+                radial-gradient(circle at 100% 100%, rgba(16, 185, 129, 0.1) 0%, transparent 35%);
+            z-index: -1;
+        }
+
+        .glass-nav {
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hero-glow {
+            text-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(59, 130, 246, 0.5);
+            background: rgba(255, 255, 255, 0.05);
         }
     </style>
 </head>
-<body class="flex items-center justify-center text-white">
+<body>
 
-    <div class="glass p-12 rounded-3xl shadow-2xl text-center max-w-md w-full mx-4 transition-all hover:scale-[1.01]">
-        <h1 class="text-5xl font-bold tracking-tighter mb-2 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-            CP Nexus
-        </h1>
-        <p class="text-slate-400 mb-8 font-light italic">The core of your digital landscape.</p>
+    <div class="mesh-gradient"></div>
 
-        <div class="space-y-4">
-            <a href="privacy.html" class="block w-full py-3 px-6 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all font-medium hover:text-blue-400">
-                Privacy Policy
-            </a>
-            <a href="terms.html" class="block w-full py-3 px-6 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-all font-medium hover:text-emerald-400">
-                Terms of Service
+    <nav class="glass-nav fixed top-0 w-full z-50 px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="cpnexus.png" alt="CP Nexus Logo" class="h-10 w-auto">
+                <span class="text-xl font-extrabold tracking-tight">CP NEXUS</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#" class="hover:text-blue-400 transition">Apps</a>
+                <a href="#" class="hover:text-blue-400 transition">Games</a>
+                <a href="#" class="hover:text-blue-400 transition">Our Vision</a>
+            </div>
+            <a href="mailto:contact@cpnexus.com" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+                Get in Touch
             </a>
         </div>
+    </nav>
 
-        <div class="mt-12 text-xs text-slate-500 uppercase tracking-widest">
-            &copy; 2026 CP Nexus Secure Systems
+    <main class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-block px-4 py-1.5 mb-6 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 text-xs font-bold uppercase tracking-widest">
+                Future of Digital Interaction
+            </div>
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tight hero-glow">
+                Create. Connect. <span class="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">Elevate.</span>
+            </h1>
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto font-light leading-relaxed mb-12">
+                CP Nexus is a forward-thinking studio dedicated to crafting immersive mobile games and high-performance digital applications. We don't just build software; we build experiences.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-20">
+                <div class="p-8 rounded-3xl border border-white/10 bg-white/5 text-left card-hover transition-all">
+                    <div class="w-12 h-12 bg-blue-600 rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">App Development</h3>
+                    <p class="text-slate-400">Streamlined, user-centric applications designed to solve real-world problems with elegant code.</p>
+                </div>
+                <div class="p-8 rounded-3xl border border-white/10 bg-white/5 text-left card-hover transition-all">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-xl mb-6 flex items-center justify-center">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Game Design</h3>
+                    <p class="text-slate-400">Engaging stories and mechanics that push the boundaries of mobile gaming entertainment.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center gap-4 text-sm">
+                <a href="privacy.html" class="text-slate-500 hover:text-white transition">Privacy Policy</a>
+                <span class="hidden md:inline text-slate-700">•</span>
+                <a href="terms.html" class="text-slate-500 hover:text-white transition">Terms of Service</a>
+                <span class="hidden md:inline text-slate-700">•</span>
+                <span class="text-slate-600">&copy; 2026 CP Nexus Secure Systems</span>
+            </div>
         </div>
-    </div>
+    </main>
 
 </body>
 </html>
